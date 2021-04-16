@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Donat el següent array de strings, mostrar per consola la frase completa usant .reduce()
+
+        var epic = ['a', 'long', 'time', 'ago', 'in a', 'galaxy', 'far far', 'away'];
+
+        Resultat per consola: 'a long time ago in a galaxy far far away'
+
+        Nota: no fa falta fer un "join".
+        */
+
+        var epic = ['a', 'long', 'time', 'ago', 'in a', 'galaxy', 'far far', 'away'];
+
+        var fraseReducer = epic.reduce(function(acumulador, valorActual){
+                return acumulador + " " + valorActual;
+        });
+
+        console.log(fraseReducer);
+
+
+
+        //en ES6
+        var epic = ['a', 'long', 'time', 'ago', 'in a', 'galaxy', 'far far', 'away'];
+        var fraseReducer = (acumulador, valorActual) => `${acumulador} ${valorActual}`;
+
+        console.log(epic.reduce(fraseReducer));
+
+
+
+    </script>
+    
+</body>
+</html>
