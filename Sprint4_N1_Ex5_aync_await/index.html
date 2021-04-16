@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        Modifica la funció 'a()' per a reemplaçar la promesa per aync/await:
+
+            function b() {
+            // tasques asíncrones , que triguen una estona..
+            }
+
+            function a() {
+                // Ens esperem que la funció b acabi
+                b().then() = > {
+                        doMoreWork();
+                }
+            }
+    -->
+
+    <script>
+           /*
+            function b() {
+                // tasques asíncrones , que triguen una estona..
+            }
+
+            async function a(){
+                // Ens esperem que la funció b acabi
+                let result = await b();
+                let resultat = await doMoreWork(result);
+
+                console.log(resultat);
+            }
+            function a();
+            */
+
+
+
+
+
+            //passem a ES6
+
+            let b = () =>{
+                // tasques asíncrones , que triguen una estona..
+            }
+
+
+            let a = async() =>{
+                
+                // Ens esperem que la funció b acabi
+                let result = await b();
+                let resultat = await doMoreWork(result);
+
+                console.log (resultat);
+            }
+            a();
+
+    </script>
+
+</body>
+</html>
