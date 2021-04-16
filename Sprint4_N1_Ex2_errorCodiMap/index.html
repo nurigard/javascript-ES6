@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        //Arregla l'error del següent bloc de codi:
+         /*
+            users.map(function (user) {
+            user.firstName;
+            });
+
+            var users = 
+            [{ firstName: 'Homer', lastName: 'Simpson' },
+            { firstName: 'Marge', lastName: 'Simpson' },
+            { firstName: 'Bart', lastName: 'Simpson' },
+            { firstName: 'Lisa', lastName: 'Simpson' },
+            { firstName: 'Maggie', lastName: 'Simpson' }];
+         
+         */   
+
+
+        var users = 
+            [{ firstName: 'Homer', lastName: 'Simpson' },
+            { firstName: 'Marge', lastName: 'Simpson' },
+            { firstName: 'Bart', lastName: 'Simpson' },
+            { firstName: 'Lisa', lastName: 'Simpson' },
+            { firstName: 'Maggie', lastName: 'Simpson' }]; 
+                    
+        
+        var nom = users.map(function (user) {
+                return user.firstName;
+            });
+
+        console.log(nom);
+
+
+
+
+        //En ES6
+        var users = 
+            [{ firstName: 'Homer', lastName: 'Simpson' },
+            { firstName: 'Marge', lastName: 'Simpson' },
+            { firstName: 'Bart', lastName: 'Simpson' },
+            { firstName: 'Lisa', lastName: 'Simpson' },
+            { firstName: 'Maggie', lastName: 'Simpson' }]; 
+                    
+
+        var nom = users.map( user => user.firstName );
+
+        console.log(nom);
+
+    </script>
+    
+</body>
+</html>
