@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        Tenim un array de tasques i volem aconseguir un array que contingui únicament els noms de les tasques. 
+                    - Usar .forEach() per obtenir aquest array.
+                    - Usar .map() per obtenir aquest array.
+
+                    var tasks = [
+                    {
+                    'name' : 'Start React web',
+                    'duration' : 120
+                    },
+                    {
+                    'name' : 'Work out',
+                    'duration' : 60
+                    },
+                    {
+                    'name' : 'Procrastinate on facebook',
+                    'duration' : 240
+                    }
+                    ];
+    -->
+
+    <script>
+        var tasks = [
+                    {
+                    'name' : 'Start React web',
+                    'duration' : 120
+                    },
+                    {
+                    'name' : 'Work out',
+                    'duration' : 60
+                    },
+                    {
+                    'name' : 'Procrastinate on facebook',
+                    'duration' : 240
+                    }
+                    ];
+
+
+     // utilitzem .map()
+     //x és cada element de l'array, en aquest cas es un objecte               
+        
+     var nameTasks = tasks.map(function(x){
+         return x['name'];
+     });
+
+     console.log(nameTasks);
+
+
+
+
+
+     //utilitzem .forEach()
+
+     tasks.forEach(function(item, index, arr){
+        arr[index] = item['name'];
+     });
+
+     console.log(tasks);
+                                                               
+
+    </script>
+
+</body>
+</html>
