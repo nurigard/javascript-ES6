@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!--
+        Crear una funció que accepti un string i retornada aquest string revertit. Nota: Usar funció fletxa (arrow functions), l'operador de prograpación (spread operator) y el mètode .reverse()
+    -->
+
+
+    Introdueix un String
+
+    <input type="text" id="revertir">
+
+    <input type="button" onclick="revertirString()" value="REVERTIR_STRING">
+
+
+    <script>
+        /*
+        function revertirString(){
+            let stringUsuari = document.getElementById("revertir").value;
+            console.log(stringUsuari);
+
+            //Per passar el string "stringUsuari" a un array "stringUsuariArray"
+            let stringUsuariArray = [...stringUsuari];
+
+            let stringUsuariInvertit = stringUsuariArray.reverse();
+
+            //Per convertir l'array "stringUsuariInvertit" en un string "stringUsuariInvertitText"
+            let stringUsuariInvertitText = stringUsuariInvertit.join('');
+
+            console.log(stringUsuariInvertitText);
+        }
+        */
+
+
+        //En ES6
+
+        let revertirString = () => {
+            let stringUsuari = document.getElementById("revertir").value;
+            console.log(stringUsuari);
+
+            let stringUsuariArray = [...stringUsuari];
+
+            let stringUsuariInvertit = stringUsuariArray.reverse();
+
+            let stringUsuariInvertitText = stringUsuariInvertit.join('');
+
+            console.log(stringUsuariInvertitText);
+        }
+
+    </script>
+
+</body>
+</html>
